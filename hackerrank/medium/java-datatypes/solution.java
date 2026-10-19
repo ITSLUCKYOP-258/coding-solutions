@@ -1,25 +1,32 @@
 
 import java.util.*;
+import java.io.*;
 
-public class Solution {
+class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
 
-        int q = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            try {
+                long x = sc.nextLong();
 
-        for (int i = 0; i < q; i++) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            int n = sc.nextInt();
+                System.out.println(x + " can be fitted in:");
 
-            int sum = a;
+                if (x >= -128 && x <= 127)
+                    System.out.println("* byte");
 
-            for (int j = 0; j < n; j++) {
-                sum += (int) Math.pow(2, j) * b;
-                System.out.print(sum + " ");
+                if (x >= -32768 && x <= 32767)
+                    System.out.println("* short");
+
+                if (x >= -2147483648L && x <= 2147483647L)
+                    System.out.println("* int");
+
+                System.out.println("* long");
             }
-
-            System.out.println();
+            catch (Exception e) {
+                System.out.println(sc.next() + " can't be fitted anywhere.");
+            }
         }
 
         sc.close();
