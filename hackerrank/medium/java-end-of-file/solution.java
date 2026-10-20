@@ -1,33 +1,20 @@
 
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
-class Solution {
+public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
 
-        for (int i = 0; i < t; i++) {
-            try {
-                long x = sc.nextLong();
+        System.out.println("================================");
 
-                System.out.println(x + " can be fitted in:");
+        for (int i = 0; i < 3; i++) {
+            String s = sc.next();
+            int n = sc.nextInt();
 
-                if (x >= -128 && x <= 127)
-                    System.out.println("* byte");
-
-                if (x >= -32768 && x <= 32767)
-                    System.out.println("* short");
-
-                if (x >= -2147483648L && x <= 2147483647L)
-                    System.out.println("* int");
-
-                System.out.println("* long");
-            }
-            catch (Exception e) {
-                System.out.println(sc.next() + " can't be fitted anywhere.");
-            }
+            System.out.printf("%-15s%03d%n", s, n);
         }
+
+        System.out.println("================================");
 
         sc.close();
     }
