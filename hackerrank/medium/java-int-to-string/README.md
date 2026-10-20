@@ -21,7 +21,7 @@ $n$ can range between $-100$ to $100$ inclusive.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-20T11:39:33.065Z  
+**Submitted:** 2026-10-20T12:58:01.810Z  
 
 ```java
 
