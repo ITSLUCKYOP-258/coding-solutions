@@ -50,7 +50,7 @@ A single line of input containing the space separated month, day and year, respe
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-20T11:19:26.222Z  
+**Submitted:** 2026-10-20T11:19:43.687Z  
 
 ```java
 import java.io.*;
